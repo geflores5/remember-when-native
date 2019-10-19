@@ -1,4 +1,4 @@
-import { StackNavigator } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation';
 
 import Home from '../screens/Home';
 import ViewTimeline from '../screens/ViewTimeline';
@@ -9,13 +9,8 @@ import EditMemory from '../screens/EditMemory';
 import EditTimeline from '../screens/EditTimeline';
 import Login from '../screens/Login';
 
-const Navigator = StackNavigator({
-  Home: {
-    screen: Home,
-    navigationOptions: {
-      header: () => null,
-    },
-  },
+const Navigator = createStackNavigator({
+  Home: { screen: Home },
   ViewTimeline: { screen: ViewTimeline },
   ViewMemory: { screen: ViewMemory },
   AddMemory: { screen: AddMemory },
@@ -23,6 +18,10 @@ const Navigator = StackNavigator({
   EditMemory: { screen: EditMemory },
   EditTimeline: { screen: EditTimeline },
   Login: { screen: Login },
+}, {
+  navigationOptions: {
+    header: () => null,
+  },
 });
 
 export default Navigator;

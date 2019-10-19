@@ -3,10 +3,10 @@ import uuid from 'uuid';
 export const addMemory = ({
   timelineID = '',
   title = '',
-  date = '',
+  date = 0,
   description = '',
   location = '',
-  media = [],
+  media = null,
 } = {}) => ({
   type: 'ADD_MEMORY',
   memory: {

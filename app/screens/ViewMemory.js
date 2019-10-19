@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { TouchableOpacity, Text, View } from 'react-native';
-
-import { Memory } from '../components/Memory';
+import { Image, TouchableOpacity, Text, View } from 'react-native';
+import { Container } from '../components/Container';
+import moment from 'moment';
 
 class ViewMemory extends Component {
   static propTypes = {
@@ -17,18 +17,20 @@ class ViewMemory extends Component {
   render() {
     const { title, date, location, description, media } = this.props.navigation.state.params.item;
     return (
-      <View>
+      <Container>
         <View>
-          <Text>{title}</Text>
-          <Text>{date}</Text>
-          <Text>{location}</Text>
-          <Text>{description}</Text>
-          <Text>{media}</Text>
+          <View>
+            <Image source={media} style={{ width: '100%', height: 300, margin: 10 }} />
+            <Text>{title}</Text>
+            <Text>{moment(date).format('MMMM Do YYYY, h:mm:ss a').toString()}</Text>
+            <Text>{location}</Text>
+            <Text>{description}</Text>
+          </View>
+          <TouchableOpacity onPress={this.handleEditMemory}>
+            <Text>Edit Memory</Text>
+          </TouchableOpacity>
         </View>
-        <TouchableOpacity onPress={this.handleEditMemory}>
-          <Text>Edit Memory</Text>
-        </TouchableOpacity>
-      </View>
+      </Container>
     );
   }
 }
