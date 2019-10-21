@@ -38,7 +38,10 @@ class MemoryForm extends Component {
     this.hideDateTimePicker();
   };
   pickImageHandler = () => {
-    ImagePicker.showImagePicker(null, (response) => {
+    const options = {
+      title: 'Select Image'
+    }
+    ImagePicker.showImagePicker(options, (response) => {
       console.log('Response = ', response);
 
       if (response.didCancel) {

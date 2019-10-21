@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { TouchableOpacity, Text, View } from 'react-native';
 
 import { Container } from '../components/Container';
-import MemoryList from '../components/MemoryList';
+import { MemoryList } from '../components/MemoryList';
 
 class ViewTimeline extends Component {
   static propTypes = {

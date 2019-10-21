@@ -6,7 +6,7 @@ import configureStore from './config/configureStore';
 const store = configureStore();
 
 export default () => (
-  <Provider store={store}>
+  <Provider store={store.store}>
     <Navigator />
   </Provider>
 );

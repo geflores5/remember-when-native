@@ -1,4 +1,5 @@
-import { createStackNavigator } from 'react-navigation';
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
 
 import Home from '../screens/Home';
 import ViewTimeline from '../screens/ViewTimeline';
@@ -24,4 +25,7 @@ const Navigator = createStackNavigator({
   },
 });
 
-export default Navigator;
+const AppContainer = createAppContainer(Navigator);
+
+export default AppContainer;
+
