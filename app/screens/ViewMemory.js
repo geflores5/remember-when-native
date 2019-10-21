@@ -20,7 +20,10 @@ class ViewMemory extends Component {
       <Container>
         <View>
           <View>
-            <Image source={media} style={{ width: '100%', height: 300, margin: 10 }} />
+            <Image
+              source={{ uri: media }}
+              style={{ width: 300, height: 300 }}
+            />
             <Text>{title}</Text>
             <Text>{moment(date).format('MMMM Do YYYY, h:mm:ss a').toString()}</Text>
             <Text>{location}</Text>

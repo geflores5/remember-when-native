@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, TextInput, Text, TouchableOpacity, View } from 'react-native';
+import { Button, Image, TextInput, Text, TouchableOpacity, View } from 'react-native';
 import DateTimePicker from 'react-native-modal-datetime-picker';
 import ImagePicker from 'react-native-image-picker';
 import moment from 'moment';
@@ -13,7 +13,7 @@ class MemoryForm extends Component {
       date: this.props.memory ? moment(this.props.memory.date) : moment(),
       location: this.props.memory ? this.props.memory.location : '',
       description: this.props.memory ? this.props.memory.description : '',
-      media: this.props.memory ? this.props.memory.media : null,
+      media: this.props.memory ? this.props.memory.media : [],
 
       isDateTimePickerVisible: false,
       isChosen: false,
@@ -39,22 +39,13 @@ class MemoryForm extends Component {
   };
   pickImageHandler = () => {
     const options = {
-      title: 'Select Image'
+      title: 'Select Image',
+      noData: true
     }
     ImagePicker.showImagePicker(options, (response) => {
       console.log('Response = ', response);
-
-      if (response.didCancel) {
-        console.log('User cancelled image picker');
-      } else if (response.error) {
-        console.log('ImagePicker Error: ', response.error);
-      } else if (response.customButton) {
-        console.log('User tapped custom button: ', response.customButton);
-      } else {
-        const source = { uri: response.uri };
-        this.setState({
-          media: source,
-        });
+      if (response.uri) {
+        this.setState({ media: response });
       }
     });
   };
@@ -88,6 +79,10 @@ class MemoryForm extends Component {
         <TouchableOpacity onPress={this.pickImageHandler}>
           <Text>Select Image</Text>
         </TouchableOpacity>
+        <Image
+          source={{ uri: this.state.media }}
+          style={{ width: 300, height: 300 }}
+        />
         <Button title="Save Memory" onPress={this.submitForm} />
       </View>
     );
