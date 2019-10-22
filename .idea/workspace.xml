@@ -6,14 +6,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a603ab1d-8ecb-44b2-b0b8-edee00b587b9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/MemoryForm/MemoryForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/MemoryForm/MemoryForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/TimelineList/TimelineList.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/TimelineList/TimelineList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/screens/AddMemory.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/AddMemory.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/screens/AddTimelinePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/AddTimelinePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/screens/EditTimeline.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/EditTimeline.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/screens/ViewTimeline.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/ViewTimeline.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/MemoryList/MemoryList.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/MemoryList/MemoryList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/selectors/getVisibleTimelines.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/selectors/getVisibleTimelines.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -43,8 +42,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
-      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -67,6 +64,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>

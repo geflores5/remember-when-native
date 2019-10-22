@@ -9,10 +9,10 @@ import styles from './styles';
 import { getVisibleMemories } from '../../selectors';
 import { Memory } from '../Memory';
 
-const MemoryList = props => (
+const MemoryList = (props) => (
   <View style={styles.container}>
     <FlatList
-      data={props.memories.filter((memory) => {
+      data={props.memories && props.memories.filter((memory) => {
         const timelineIDMatch = memory.timelineID === props.timelineID;
         return timelineIDMatch;
       })}
@@ -34,7 +34,7 @@ const MemoryList = props => (
 );
 
 const mapStateToProps = state => ({
-  memories: getVisibleMemories(state.firestore.ordered.memories, state.memoryFilters),
+  memories: state.firestore.ordered.memories && getVisibleMemories(state.firestore.ordered.memories, state.memoryFilters),
 });
 
 export default withNavigation(compose(

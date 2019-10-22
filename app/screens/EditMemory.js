@@ -28,7 +28,7 @@ class EditMemory extends Component {
         <Button
           title="Remove Memory"
           onPress={memory => {
-            this.props.dispatch(removeMemory({ id: currentMemory.id }));
+            this.props.dispatch(removeMemory(currentMemory.id));
             this.handleGoHome();
           }}
         />

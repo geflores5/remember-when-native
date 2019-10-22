@@ -15,6 +15,7 @@ class EditTimelinePage extends Component {
   };
 
   render() {
+    console.log(this.props.navigation.state.params.timeline.id)
     const currentTimeline = this.props.navigation.state.params.timeline;
     return (
       <View>
@@ -28,7 +29,7 @@ class EditTimelinePage extends Component {
         <Button
           title="Remove Timeline"
           onPress={() => {
-            this.props.dispatch(removeTimeline({ id: currentTimeline.id }));
+            this.props.dispatch(removeTimeline(currentTimeline.id));
             this.handleGoHome();
           }}
         />
