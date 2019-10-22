@@ -1,7 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { compose } from 'redux';
 import { FlatList, View } from 'react-native';
 import { withNavigation } from 'react-navigation';
+import { firestoreConnect } from 'react-redux-firebase';
 
 import { getVisibleTimelines } from '../../selectors';
 import { Timeline } from '../Timeline';
@@ -29,4 +31,9 @@ const mapStateToProps = state => ({
   timelines: getVisibleTimelines(state.timelines, state.timelineFilters),
 });
 
-export default withNavigation(connect(mapStateToProps)(TimelineList));
+export default withNavigation((compose(
+  connect(mapStateToProps),
+  firestoreConnect([
+    { collection: 'timelines' }
+  ])
+)(TimelineList)));

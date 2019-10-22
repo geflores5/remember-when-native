@@ -2,17 +2,25 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import AppContainer from './config/routes';
 import configureStore from './config/configureStore';
-import { PersistGate } from 'redux-persist/es/integration/react';
+import { ReactReduxFirebaseProvider } from 'react-redux-firebase';
+import { createFirestoreInstance } from 'redux-firestore';
+import firebase from '../app/config/configureFirebase';
 
-const { store, persistor } = configureStore();
+const store = configureStore();
+
+const rrfConfig = { userProfile: 'users' }
+
+const rrfProps = {
+  firebase,
+  config: rrfConfig,
+  dispatch: store.dispatch,
+  createFirestoreInstance
+}
 
 export default () => (
   <Provider store={store}>
-    <PersistGate
-      loading={null}
-      persistor={persistor}
-    >
+    <ReactReduxFirebaseProvider {...rrfProps}>
       <AppContainer />
-    </PersistGate>
+    </ReactReduxFirebaseProvider>
   </Provider>
 );
