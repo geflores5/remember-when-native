@@ -15,6 +15,7 @@ class AddMemoryPage extends Component {
   };
 
   render() {
+    console.log(this.props.navigation.state.params.timeline.id)
     const timeline = this.props.navigation.state.params.timeline;
     return (
       <View>

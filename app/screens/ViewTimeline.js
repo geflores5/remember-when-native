@@ -21,6 +21,7 @@ class ViewTimeline extends Component {
   };
 
   render() {
+    console.log(this.props.navigation.state.params.item)
     const { id, title, description } = this.props.navigation.state.params.item;
     return (
       <Container>

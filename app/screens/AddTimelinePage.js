@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { Text, TextInput, View } from 'react-native';
+import { View } from 'react-native';
 
 import { addTimeline } from '../actions/timelines';
 import TimelineForm from '../components/TimelineForm/TimelineForm';

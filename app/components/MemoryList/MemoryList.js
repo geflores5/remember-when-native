@@ -34,7 +34,7 @@ const MemoryList = props => (
 );
 
 const mapStateToProps = state => ({
-  memories: getVisibleMemories(state.memories, state.memoryFilters),
+  memories: getVisibleMemories(state.firestore.ordered.memories, state.memoryFilters),
 });
 
 export default withNavigation(compose(

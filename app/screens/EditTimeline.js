@@ -27,7 +27,7 @@ class EditTimelinePage extends Component {
         />
         <Button
           title="Remove Timeline"
-          onPress={timeline => {
+          onPress={() => {
             this.props.dispatch(removeTimeline({ id: currentTimeline.id }));
             this.handleGoHome();
           }}

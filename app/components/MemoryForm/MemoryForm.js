@@ -8,12 +8,12 @@ class MemoryForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      timelineID: this.props.memory ? this.props.memory.timelineID : this.props.timelineID,
-      title: this.props.memory ? this.props.memory.title : '',
-      date: this.props.memory ? moment(this.props.memory.date) : moment(),
-      location: this.props.memory ? this.props.memory.location : '',
-      description: this.props.memory ? this.props.memory.description : '',
-      media: this.props.memory ? this.props.memory.media : [],
+      timelineID: props.memory ? props.memory.timelineID : props.timelineID,
+      title: props.memory ? props.memory.title : '',
+      date: props.memory ? moment(props.memory.date) : moment(),
+      location: props.memory ? props.memory.location : '',
+      description: props.memory ? props.memory.description : '',
+      media: props.memory ? props.memory.media : null,
 
       isDateTimePickerVisible: false,
       isChosen: false,
@@ -45,7 +45,7 @@ class MemoryForm extends Component {
     ImagePicker.showImagePicker(options, (response) => {
       console.log('Response = ', response);
       if (response.uri) {
-        this.setState({ media: response });
+        this.setState({ media: response.uri });
       }
     });
   };

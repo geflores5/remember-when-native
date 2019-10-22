@@ -9,11 +9,11 @@ import { getVisibleTimelines } from '../../selectors';
 import { Timeline } from '../Timeline';
 import styles from './styles';
 
-const TimelineList = props => (
+const TimelineList = (props) => (
   <View style={styles.container}>
     <FlatList
       data={props.timelines}
-      keyExtractor={(item, index) => item.id}
+      keyExtractor={item => item.id}
       renderItem={({ item }) => (
         <Timeline
           title={item.title}
@@ -28,7 +28,7 @@ const TimelineList = props => (
 );
 
 const mapStateToProps = state => ({
-  timelines: getVisibleTimelines(state.timelines, state.timelineFilters),
+  timelines: getVisibleTimelines(state.firestore.ordered.timelines, state.timelineFilters),
 });
 
 export default withNavigation((compose(
