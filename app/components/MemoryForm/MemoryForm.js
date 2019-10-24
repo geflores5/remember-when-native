@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Image, TextInput, Text, TouchableOpacity, View } from 'react-native';
+import { Button, Image, ProgressBarAndroid, TextInput, Text, TouchableOpacity, View } from 'react-native';
 import DateTimePicker from 'react-native-modal-datetime-picker';
 import ImagePicker from 'react-native-image-picker';
 import moment from 'moment';
@@ -13,7 +13,8 @@ class MemoryForm extends Component {
       date: props.memory ? moment(props.memory.date) : moment(),
       location: props.memory ? props.memory.location : '',
       description: props.memory ? props.memory.description : '',
-      media: props.memory ? props.memory.media : null,
+      media: props.memory ? props.memory.media : {},
+      imageUrl: props.memory ? props.memory.imageUrl : '',
 
       isDateTimePickerVisible: false,
       isChosen: false,
@@ -26,7 +27,7 @@ class MemoryForm extends Component {
       date: this.state.date.valueOf(),
       location: this.state.location,
       description: this.state.description,
-      media: this.state.media,
+      imageUrl: this.state.imageUrl,
     });
     this.props.goHome();
   };
@@ -37,16 +38,17 @@ class MemoryForm extends Component {
     this.setState({ isChosen: true });
     this.hideDateTimePicker();
   };
+
   pickImageHandler = () => {
     const options = {
-      title: 'Select Image',
-      noData: true
+      title: 'Select Image'
     }
     ImagePicker.showImagePicker(options, (response) => {
       console.log('Response = ', response);
       if (response.uri) {
-        this.setState({ media: response.uri });
+        this.setState({ media: response });
       }
+      console.log(this.state);
     });
   };
   render() {
@@ -80,7 +82,7 @@ class MemoryForm extends Component {
           <Text>Select Image</Text>
         </TouchableOpacity>
         <Image
-          source={{ uri: this.state.media }}
+          source={{ uri: this.state.imageUrl }}
           style={{ width: 300, height: 300 }}
         />
         <Button title="Save Memory" onPress={this.submitForm} />

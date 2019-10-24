@@ -1,13 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a603ab1d-8ecb-44b2-b0b8-edee00b587b9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/5.4.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/5.4.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugAssets/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/b+QDwIQmSnJIQrfsRcOCIYCA+R0=" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/b+QDwIQmSnJIQrfsRcOCIYCA+R0=" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/instant_app_manifest/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/instant_app_manifest/debug/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/javac/debug/classes/com/rememberwhen/MainApplication$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/javac/debug/classes/com/rememberwhen/MainApplication$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/javac/debug/classes/com/rememberwhen/MainApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/javac/debug/classes/com/rememberwhen/MainApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/0/com/rememberwhen/MainApplication$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/0/com/rememberwhen/MainApplication$1.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/0/com/rememberwhen/MainApplication.dex" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/intermediates/transforms/dexBuilder/debug/0/com/rememberwhen/MainApplication.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/outputs/apk/debug/app-debug.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/screens/ViewMemory.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/ViewMemory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/java/com/rememberwhen/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/java/com/rememberwhen/MainApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/MemoryForm/MemoryForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/MemoryForm/MemoryForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/EditTimeline.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/EditTimeline.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/rememberwhen.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ios/rememberwhen.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -37,6 +73,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -55,12 +93,55 @@
               <item name="android" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
+            <path>
+              <item name="remember-when-native" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/Code/remember-when-native" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="android" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="remember-when-native" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/Code/remember-when-native" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="android" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="remember-when-native" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/Code/remember-when-native" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="android" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="remember-when-native" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/Code/remember-when-native" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="android" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="remember-when-native" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/Code/remember-when-native" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="android" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="rememberwhen" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -107,7 +188,7 @@
     <frame x="0" y="23" width="840" height="877" extended-state="0" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.33834586" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.42105263" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -116,7 +197,7 @@
       <window_info id="Resources Explorer" order="7" weight="0.32957393" />
       <window_info id="Capture Tool" order="8" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.32941177" />
-      <window_info active="true" anchor="bottom" id="Logcat" order="1" sideWeight="0.49624062" visible="true" weight="0.83439493" />
+      <window_info active="true" anchor="bottom" id="Logcat" order="1" sideWeight="0.49624062" visible="true" weight="0.8089172" />
       <window_info anchor="bottom" id="TODO" order="2" weight="0.32941177" />
       <window_info anchor="bottom" id="Terminal" order="3" weight="0.32941177" />
       <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.5037594" side_tool="true" weight="0.32941177" />

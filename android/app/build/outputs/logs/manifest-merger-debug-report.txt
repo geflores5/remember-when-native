@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:1:1-36:12
-INJECTED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:1:1-36:12
-INJECTED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:1:1-36:12
-INJECTED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:1:1-36:12
+ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:1:1-38:12
+INJECTED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:1:1-38:12
+INJECTED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:1:1-38:12
+INJECTED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:1:1-38:12
 MERGED from [com.google.firebase:firebase-analytics:17.2.0] /Users/geflores/.gradle/caches/transforms-2/files-2.1/5360419d4f2c78ee0a1ab88a2bb93fad/firebase-analytics-17.2.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-auth:19.1.0] /Users/geflores/.gradle/caches/transforms-2/files-2.1/4bf5ad23fb8b48603baac97e97e245fe/firebase-auth-19.1.0/AndroidManifest.xml:17:1-42:12
 MERGED from [com.google.firebase:firebase-firestore:21.2.0] /Users/geflores/.gradle/caches/transforms-2/files-2.1/70ef45c02bdf2ee400cf42a2605d8680/jetified-firebase-firestore-21.2.0/AndroidManifest.xml:2:1-26:12
@@ -13,6 +13,7 @@ MERGED from [:react-native-image-picker] /Users/geflores/Code/remember-when-nati
 MERGED from [:react-native-screens] /Users/geflores/Code/remember-when-native/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-gesture-handler] /Users/geflores/Code/remember-when-native/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-reanimated] /Users/geflores/Code/remember-when-native/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:rn-fetch-blob] /Users/geflores/Code/remember-when-native/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-47:12
 MERGED from [com.facebook.react:react-native:0.61.2] /Users/geflores/.gradle/caches/transforms-2/files-2.1/bc22976b75d9e32773371bea1773dd46/jetified-react-native-0.61.2/AndroidManifest.xml:2:1-13:12
 MERGED from [androidx.appcompat:appcompat:1.1.0-rc01] /Users/geflores/.gradle/caches/transforms-2/files-2.1/f69e18bb4d6f4dd3491b4176f4f0a64d/appcompat-1.1.0-rc01/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/geflores/.gradle/caches/transforms-2/files-2.1/2b1bcabae6ee9c47b0643990b00d5cab/recyclerview-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -77,9 +78,9 @@ MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/geflores/.g
 MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/geflores/.gradle/caches/transforms-2/files-2.1/bddf90bdf7753737ab59927a7d1c7063/imagepipeline-base-2.0.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/geflores/.gradle/caches/transforms-2/files-2.1/e8a9686d29e50fa06e47435b007ebc44/soloader-0.6.0/AndroidManifest.xml:2:1-13:12
 MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/geflores/.gradle/caches/transforms-2/files-2.1/a4a9874cd51ad2d04ae819ad90db4a5b/jetified-fbcore-2.0.0/AndroidManifest.xml:2:1-9:12
-INJECTED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:1:1-36:12
-INJECTED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:1:1-36:12
-INJECTED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:1:1-36:12
+INJECTED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:1:1-38:12
+INJECTED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:1:1-38:12
+INJECTED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:1:1-38:12
 	package
 		ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:2:5-31
 		INJECTED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml
@@ -100,6 +101,8 @@ MERGED from [com.google.firebase:firebase-firestore:21.2.0] /Users/geflores/.gra
 MERGED from [com.google.firebase:firebase-firestore:21.2.0] /Users/geflores/.gradle/caches/transforms-2/files-2.1/70ef45c02bdf2ee400cf42a2605d8680/jetified-firebase-firestore-21.2.0/AndroidManifest.xml:14:5-67
 MERGED from [:react-native-firebase] /Users/geflores/Code/remember-when-native/node_modules/react-native-firebase/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-67
 MERGED from [:react-native-firebase] /Users/geflores/Code/remember-when-native/node_modules/react-native-firebase/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-67
+MERGED from [:rn-fetch-blob] /Users/geflores/Code/remember-when-native/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-67
+MERGED from [:rn-fetch-blob] /Users/geflores/Code/remember-when-native/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-67
 MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/geflores/.gradle/caches/transforms-2/files-2.1/7c4237e0029812955685234cfce19139/play-services-measurement-17.2.0/AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/geflores/.gradle/caches/transforms-2/files-2.1/7c4237e0029812955685234cfce19139/play-services-measurement-17.2.0/AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/geflores/.gradle/caches/transforms-2/files-2.1/28c1ceda9eb72d23d1907429a7dd5035/play-services-measurement-api-17.2.0/AndroidManifest.xml:22:5-67
@@ -126,12 +129,18 @@ ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/Androi
 		ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:9:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:10:5-81
+MERGED from [:rn-fetch-blob] /Users/geflores/Code/remember-when-native/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:33:5-81
+MERGED from [:rn-fetch-blob] /Users/geflores/Code/remember-when-native/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:33:5-81
 	android:name
 		ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:10:22-78
+uses-permission#android.permission.DOWNLOAD_WITHOUT_NOTIFICATION
+ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:11:5-88
+	android:name
+		ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:11:22-85
 uses-sdk
-ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:12:5-14:41
-INJECTED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:12:5-14:41
-INJECTED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:12:5-14:41
+ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:13:5-15:41
+INJECTED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:13:5-15:41
+INJECTED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:13:5-15:41
 MERGED from [com.google.firebase:firebase-analytics:17.2.0] /Users/geflores/.gradle/caches/transforms-2/files-2.1/5360419d4f2c78ee0a1ab88a2bb93fad/firebase-analytics-17.2.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-analytics:17.2.0] /Users/geflores/.gradle/caches/transforms-2/files-2.1/5360419d4f2c78ee0a1ab88a2bb93fad/firebase-analytics-17.2.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-auth:19.1.0] /Users/geflores/.gradle/caches/transforms-2/files-2.1/4bf5ad23fb8b48603baac97e97e245fe/firebase-auth-19.1.0/AndroidManifest.xml:21:5-44
@@ -150,6 +159,8 @@ MERGED from [:react-native-gesture-handler] /Users/geflores/Code/remember-when-n
 MERGED from [:react-native-gesture-handler] /Users/geflores/Code/remember-when-native/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-reanimated] /Users/geflores/Code/remember-when-native/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-reanimated] /Users/geflores/Code/remember-when-native/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:rn-fetch-blob] /Users/geflores/Code/remember-when-native/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:rn-fetch-blob] /Users/geflores/Code/remember-when-native/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.61.2] /Users/geflores/.gradle/caches/transforms-2/files-2.1/bc22976b75d9e32773371bea1773dd46/jetified-react-native-0.61.2/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.61.2] /Users/geflores/.gradle/caches/transforms-2/files-2.1/bc22976b75d9e32773371bea1773dd46/jetified-react-native-0.61.2/AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.appcompat:appcompat:1.1.0-rc01] /Users/geflores/.gradle/caches/transforms-2/files-2.1/f69e18bb4d6f4dd3491b4176f4f0a64d/appcompat-1.1.0-rc01/AndroidManifest.xml:20:5-22:41
@@ -278,18 +289,18 @@ MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/geflores/.gradle/cache
 MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/geflores/.gradle/caches/transforms-2/files-2.1/e8a9686d29e50fa06e47435b007ebc44/soloader-0.6.0/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/geflores/.gradle/caches/transforms-2/files-2.1/a4a9874cd51ad2d04ae819ad90db4a5b/jetified-fbcore-2.0.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/geflores/.gradle/caches/transforms-2/files-2.1/a4a9874cd51ad2d04ae819ad90db4a5b/jetified-fbcore-2.0.0/AndroidManifest.xml:5:5-7:41
-INJECTED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:12:5-14:41
-INJECTED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:12:5-14:41
+INJECTED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:13:5-15:41
+INJECTED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:13:5-15:41
 	android:targetSdkVersion
-		ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:14:9-38
+		ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:15:9-38
 		INJECTED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:13:9-35
+		ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:14:9-35
 		INJECTED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml
 application
-ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:16:5-34:19
+ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:17:5-36:19
 MERGED from [com.google.firebase:firebase-analytics:17.2.0] /Users/geflores/.gradle/caches/transforms-2/files-2.1/5360419d4f2c78ee0a1ab88a2bb93fad/firebase-analytics-17.2.0/AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-analytics:17.2.0] /Users/geflores/.gradle/caches/transforms-2/files-2.1/5360419d4f2c78ee0a1ab88a2bb93fad/firebase-analytics-17.2.0/AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-auth:19.1.0] /Users/geflores/.gradle/caches/transforms-2/files-2.1/4bf5ad23fb8b48603baac97e97e245fe/firebase-auth-19.1.0/AndroidManifest.xml:23:5-40:19
@@ -300,6 +311,8 @@ MERGED from [:react-native-firebase] /Users/geflores/Code/remember-when-native/n
 MERGED from [:react-native-firebase] /Users/geflores/Code/remember-when-native/node_modules/react-native-firebase/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-21:19
 MERGED from [:react-native-image-picker] /Users/geflores/Code/remember-when-native/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-19:19
 MERGED from [:react-native-image-picker] /Users/geflores/Code/remember-when-native/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-19:19
+MERGED from [:rn-fetch-blob] /Users/geflores/Code/remember-when-native/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:35:5-45:19
+MERGED from [:rn-fetch-blob] /Users/geflores/Code/remember-when-native/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:35:5-45:19
 MERGED from [com.facebook.react:react-native:0.61.2] /Users/geflores/.gradle/caches/transforms-2/files-2.1/bc22976b75d9e32773371bea1773dd46/jetified-react-native-0.61.2/AndroidManifest.xml:11:5-20
 MERGED from [com.facebook.react:react-native:0.61.2] /Users/geflores/.gradle/caches/transforms-2/files-2.1/bc22976b75d9e32773371bea1773dd46/jetified-react-native-0.61.2/AndroidManifest.xml:11:5-20
 MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/geflores/.gradle/caches/transforms-2/files-2.1/7c4237e0029812955685234cfce19139/play-services-measurement-17.2.0/AndroidManifest.xml:28:5-53:19
@@ -341,41 +354,41 @@ MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/geflores/.gradle/cache
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0-rc01] /Users/geflores/.gradle/caches/transforms-2/files-2.1/08a5e8398acd19c74ddd3081e99f0d61/core-1.1.0-rc01/AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:20:7-39
+		ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:21:7-39
 	android:icon
-		ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:21:7-41
+		ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:22:7-41
 	android:allowBackup
-		ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:18:7-33
+		ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:19:7-33
 	android:theme
-		ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:22:7-38
+		ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:23:7-38
 	android:usesCleartextTraffic
-		ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:19:7-42
+		ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:20:7-42
 	android:name
-		ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:17:7-38
+		ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:18:7-38
 activity#com.rememberwhen.MainActivity
-ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:23:7-32:18
+ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:25:7-34:18
 	android:label
-		ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:25:9-41
+		ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:27:9-41
 	android:windowSoftInputMode
-		ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:27:9-51
+		ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:29:9-51
 	android:configChanges
-		ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:26:9-79
+		ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:28:9-79
 	android:name
-		ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:24:9-37
+		ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:26:9-37
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:28:9-31:25
+ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:30:9-33:25
 action#android.intent.action.MAIN
-ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:29:13-65
+ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:31:13-65
 	android:name
-		ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:29:21-62
+		ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:31:21-62
 category#android.intent.category.LAUNCHER
-ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:30:13-73
+ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:32:13-73
 	android:name
-		ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:30:23-70
+		ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:32:23-70
 activity#com.facebook.react.devsupport.DevSettingsActivity
-ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:33:7-84
+ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:35:7-84
 	android:name
-		ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:33:17-81
+		ADDED from /Users/geflores/Code/remember-when-native/android/app/src/main/AndroidManifest.xml:35:17-81
 activity#com.google.firebase.auth.internal.FederatedSignInActivity
 ADDED from [com.google.firebase:firebase-auth:19.1.0] /Users/geflores/.gradle/caches/transforms-2/files-2.1/4bf5ad23fb8b48603baac97e97e245fe/firebase-auth-19.1.0/AndroidManifest.xml:24:9-31:50
 	android:excludeFromRecents
@@ -422,6 +435,8 @@ uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-firestore:21.2.0] /Users/geflores/.gradle/caches/transforms-2/files-2.1/70ef45c02bdf2ee400cf42a2605d8680/jetified-firebase-firestore-21.2.0/AndroidManifest.xml:13:5-79
 MERGED from [:react-native-firebase] /Users/geflores/Code/remember-when-native/node_modules/react-native-firebase/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-79
 MERGED from [:react-native-firebase] /Users/geflores/Code/remember-when-native/node_modules/react-native-firebase/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-79
+MERGED from [:rn-fetch-blob] /Users/geflores/Code/remember-when-native/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:5-79
+MERGED from [:rn-fetch-blob] /Users/geflores/Code/remember-when-native/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:5-79
 MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/geflores/.gradle/caches/transforms-2/files-2.1/7c4237e0029812955685234cfce19139/play-services-measurement-17.2.0/AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/geflores/.gradle/caches/transforms-2/files-2.1/7c4237e0029812955685234cfce19139/play-services-measurement-17.2.0/AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/geflores/.gradle/caches/transforms-2/files-2.1/28c1ceda9eb72d23d1907429a7dd5035/play-services-measurement-api-17.2.0/AndroidManifest.xml:23:5-79
@@ -444,6 +459,8 @@ ADDED from [com.google.firebase:firebase-firestore:21.2.0] /Users/geflores/.grad
 		ADDED from [com.google.firebase:firebase-firestore:21.2.0] /Users/geflores/.gradle/caches/transforms-2/files-2.1/70ef45c02bdf2ee400cf42a2605d8680/jetified-firebase-firestore-21.2.0/AndroidManifest.xml:21:17-111
 uses-permission#android.permission.WAKE_LOCK
 ADDED from [:react-native-firebase] /Users/geflores/Code/remember-when-native/node_modules/react-native-firebase/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-68
+MERGED from [:rn-fetch-blob] /Users/geflores/Code/remember-when-native/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:5-68
+MERGED from [:rn-fetch-blob] /Users/geflores/Code/remember-when-native/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:5-68
 MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/geflores/.gradle/caches/transforms-2/files-2.1/7c4237e0029812955685234cfce19139/play-services-measurement-17.2.0/AndroidManifest.xml:25:5-68
 MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/geflores/.gradle/caches/transforms-2/files-2.1/7c4237e0029812955685234cfce19139/play-services-measurement-17.2.0/AndroidManifest.xml:25:5-68
 MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/geflores/.gradle/caches/transforms-2/files-2.1/28c1ceda9eb72d23d1907429a7dd5035/play-services-measurement-api-17.2.0/AndroidManifest.xml:24:5-68
@@ -478,6 +495,24 @@ ADDED from [:react-native-image-picker] /Users/geflores/Code/remember-when-nativ
 		ADDED from [:react-native-image-picker] /Users/geflores/Code/remember-when-native/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:17-55
 	android:name
 		ADDED from [:react-native-image-picker] /Users/geflores/Code/remember-when-native/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:17-67
+uses-permission#com.android.vending.CHECK_LICENSE
+ADDED from [:rn-fetch-blob] /Users/geflores/Code/remember-when-native/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-73
+	android:name
+		ADDED from [:rn-fetch-blob] /Users/geflores/Code/remember-when-native/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:22-70
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from [:rn-fetch-blob] /Users/geflores/Code/remember-when-native/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:5-76
+	android:name
+		ADDED from [:rn-fetch-blob] /Users/geflores/Code/remember-when-native/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:22-73
+provider#com.RNFetchBlob.Utils.FileProvider
+ADDED from [:rn-fetch-blob] /Users/geflores/Code/remember-when-native/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:36:9-44:20
+	android:grantUriPermissions
+		ADDED from [:rn-fetch-blob] /Users/geflores/Code/remember-when-native/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:40:13-47
+	android:authorities
+		ADDED from [:rn-fetch-blob] /Users/geflores/Code/remember-when-native/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:38:13-60
+	android:exported
+		ADDED from [:rn-fetch-blob] /Users/geflores/Code/remember-when-native/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:39:13-37
+	android:name
+		ADDED from [:rn-fetch-blob] /Users/geflores/Code/remember-when-native/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:37:13-62
 uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
 ADDED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/geflores/.gradle/caches/transforms-2/files-2.1/7c4237e0029812955685234cfce19139/play-services-measurement-17.2.0/AndroidManifest.xml:26:5-110
 MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] /Users/geflores/.gradle/caches/transforms-2/files-2.1/7b6b88ecf3a259024a45d2a41b617e9c/play-services-measurement-impl-17.2.0/AndroidManifest.xml:26:5-110
