@@ -1,6 +1,7 @@
-#Wed Oct 23 16:43:52 PDT 2019
+#Thu Oct 24 15:52:03 PDT 2019
 path.1=classes.dex
 path.0=classes.dex
+renamed.10=classes11.dex
 renamed.9=classes10.dex
 renamed.8=classes9.dex
 renamed.7=classes8.dex
@@ -21,6 +22,8 @@ base.3=/Users/geflores/Code/remember-when-native/android/app/build/intermediates
 base.2=/Users/geflores/Code/remember-when-native/android/app/build/intermediates/dex/debug/mergeExtDexDebug/out/classes2.dex
 base.1=/Users/geflores/Code/remember-when-native/android/app/build/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex
 base.0=/Users/geflores/Code/remember-when-native/android/app/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex
+base.10=/Users/geflores/Code/remember-when-native/android/app/build/intermediates/dex/debug/mergeLibDexDebug/out/classes_7.dex
+path.10=classes_7.dex
 path.9=classes_6.dex
 path.8=classes_5.dex
 path.7=classes_4.dex

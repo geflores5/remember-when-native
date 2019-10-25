@@ -1,30 +1,36 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { TouchableOpacity, Text, View } from 'react-native';
+import { connect } from 'react-redux';
+import { Button, TouchableOpacity, Text, View } from 'react-native';
 
 import { Container } from '../components/Container';
 import { TimelineList } from '../components/TimelineList';
 
-class Home extends Component {
-  static propTypes = {
-    navigation: PropTypes.object,
+const Home = (props) => {
+  const handleAddTimeline = () => {
+    props.nav('AddTimelinePage');
   };
-  handleAddTimeline = () => {
-    this.props.navigation.navigate('AddTimelinePage');
+  const handleSignIn = () => {
+    props.nav('SignIn');
   };
+  return (
+    <Container>
+      <View>
+        <Button
+          title="Add Timeline"
+          onPress={handleAddTimeline}
+        />
+        <TimelineList />
+      </View>
+    </Container>
+  );
+}
 
-  render() {
-    return (
-      <Container>
-        <View>
-          <TouchableOpacity onPress={this.handleAddTimeline}>
-            <Text>Add Timeline</Text>
-          </TouchableOpacity>
-          <TimelineList />
-        </View>
-      </Container>
-    );
+const mapStateToProps = (state, ownProps) => {
+  return {
+    auth: state.firebase.auth,
+    nav: ownProps.navigation.navigate
   }
 }
 
-export default Home;
+export default connect(mapStateToProps)(Home);
