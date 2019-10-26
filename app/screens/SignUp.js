@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { Card, Button, Input } from "react-native-elements";
+import { Card, Button, Input, Text } from "react-native-elements";
 import { View } from 'react-native';
 import { signUp } from '../actions/auth';
+import { Container } from '../components/Container';
 
 class SignUp extends Component {
   constructor(props) {
@@ -22,33 +23,43 @@ class SignUp extends Component {
   };
   render() {
     return (
-      <View style={{ paddingVertical: 20 }}>
-        <Card>
-          <Input
-            placeholder="Email address..."
-            onChangeText={email => this.setState({ email })}
-            label="Email"
-          />
-          <Input
-            placeholder="Password..."
-            onChangeText={password => this.setState({ password })}
-            label="Password"
-          />
-          <Button
-            buttonStyle={{ marginTop: 20 }}
-            backgroundColor="#03A9F4"
-            title="Sign Up"
-            onPress={this.submitForm}
-          />
-          <Button
-            buttonStyle={{ marginTop: 20 }}
-            backgroundColor="transparent"
-            textStyle={{ color: "#bcbec1" }}
-            title="Sign In"
-            onPress={() => this.props.navigation.navigate("SignIn")}
-          />
-        </Card>
-      </View>
+      <Container>
+        <View style={{
+          paddingVertical: 20,
+        }}>
+          <Text
+            h1
+            h1Style={{ textAlign: "center", marginBottom: 20 }}
+          >
+            Remember When</Text>
+          <Card>
+            <Input
+              placeholder="Email address..."
+              onChangeText={email => this.setState({ email })}
+              label="Email"
+            />
+            <Input
+              placeholder="Password..."
+              onChangeText={password => this.setState({ password })}
+              label="Password"
+            />
+            <Button
+              buttonStyle={{ marginTop: 20 }}
+              backgroundColor="#03A9F4"
+              title="Sign Up"
+              onPress={this.submitForm}
+            />
+            <Button
+              buttonStyle={{ marginTop: 20 }}
+              backgroundColor="transparent"
+              textStyle={{ color: "#bcbec1" }}
+              title="Sign In"
+              onPress={() => this.props.navigation.navigate("SignIn")}
+            />
+          </Card>
+        </View>
+      </Container>
+
     );
   }
 }

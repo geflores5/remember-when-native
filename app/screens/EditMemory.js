@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { Button, Text, TextInput, View } from 'react-native';
+import { View } from 'react-native';
+import { Button, Text } from "react-native-elements";
 
+import { Container } from '../components/Container';
 import { editMemory, removeMemory } from '../actions/memories';
 import MemoryForm from '../components/MemoryForm/MemoryForm';
 
@@ -17,22 +19,36 @@ class EditMemory extends Component {
   render() {
     const currentMemory = this.props.navigation.state.params.memory;
     return (
-      <View>
-        <MemoryForm
-          memory={currentMemory}
-          submitMemory={memory => {
-            this.props.dispatch(editMemory(currentMemory.id, memory));
-          }}
-          goHome={this.handleGoHome}
-        />
-        <Button
-          title="Remove Memory"
-          onPress={memory => {
-            this.props.dispatch(removeMemory(currentMemory.id));
-            this.handleGoHome();
-          }}
-        />
-      </View>
+      <Container>
+        <View style={{
+          width: '100%',
+          justifyContent: 'space-around'
+        }}>
+          <View
+            style={{
+              margin: 10,
+              flexDirection: 'row',
+              justifyContent: 'center'
+            }}>
+            <MemoryForm
+              memory={currentMemory}
+              submitMemory={memory => {
+                this.props.dispatch(editMemory(currentMemory.id, memory));
+              }}
+              goHome={this.handleGoHome}
+            />
+          </View>
+          <Button
+            buttonStyle={{ padding: 0, marginLeft: 10, marginRight: 10 }}
+            title="Remove Memory"
+            onPress={memory => {
+              this.props.dispatch(removeMemory(currentMemory.id));
+              this.handleGoHome();
+            }}
+          />
+        </View>
+      </Container>
+
     );
   }
 }

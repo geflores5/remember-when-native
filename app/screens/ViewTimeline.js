@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { TouchableOpacity, Text, View } from 'react-native';
+import { View } from 'react-native';
+import { Button, Text } from "react-native-elements";
 
 import { Container } from '../components/Container';
 import { MemoryList } from '../components/MemoryList';
@@ -26,15 +27,36 @@ class ViewTimeline extends Component {
     return (
       <Container>
         <View>
-          <Text>{title}</Text>
-          <Text>{description}</Text>
+          <Text
+            h1
+            h1Style={{ textAlign: "center", marginTop: 30 }}
+          >
+            {title}
+          </Text>
+          <Text
+            h4
+            h4Style={{ textAlign: "center", marginBottom: 20 }}
+          >
+            {description}
+          </Text>
         </View>
-        <TouchableOpacity onPress={this.handleEditTimeline}>
-          <Text>Edit Timeline</Text>
-        </TouchableOpacity>
-        <TouchableOpacity onPress={this.handleAddMemory}>
-          <Text>+ Add Memory</Text>
-        </TouchableOpacity>
+        <View style={{
+          flexDirection: 'row',
+          justifyContent: 'space-around',
+          width: '80%',
+          marginBottom: 20
+        }}>
+          <Button
+            backgroundColor="#03A9F4"
+            title="Edit Timeline"
+            onPress={this.handleEditTimeline}
+          />
+          <Button
+            backgroundColor="#03A9F4"
+            title="Add Memory"
+            onPress={this.handleAddMemory}
+          />
+        </View>
         <MemoryList timelineID={id} />
       </Container>
     );

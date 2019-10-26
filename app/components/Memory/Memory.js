@@ -5,7 +5,7 @@ import { TouchableOpacity, Text, View } from 'react-native';
 import styles from './styles';
 
 const Memory = ({ title, description, onPress }) => (
-  <View style={styles.container}>
+  <View>
     <TouchableOpacity onPress={onPress}>
       <View style={styles.row}>
         <Text>{title}</Text>

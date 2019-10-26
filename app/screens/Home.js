@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { Button, TouchableOpacity, Text, View } from 'react-native';
+import { View } from 'react-native';
+import { Button } from "react-native-elements";
 
 import { Container } from '../components/Container';
 import { TimelineList } from '../components/TimelineList';
@@ -18,6 +18,7 @@ const Home = (props) => {
       <View>
         <Button
           title="Add Timeline"
+          buttonStyle={{ margin: 20 }}
           onPress={handleAddTimeline}
         />
         <TimelineList />

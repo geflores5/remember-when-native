@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { Button, Image, ProgressBarAndroid, TextInput, Text, TouchableOpacity, View } from 'react-native';
+import { Image, ProgressBarAndroid, TextInput, Text, TouchableOpacity, View } from 'react-native';
 import DateTimePicker from 'react-native-modal-datetime-picker';
 import ImagePicker from 'react-native-image-picker';
 import moment from 'moment';
+import { Card, Button, Input } from "react-native-elements";
 
 class MemoryForm extends Component {
   constructor(props) {
@@ -53,39 +54,60 @@ class MemoryForm extends Component {
   };
   render() {
     return (
-      <View>
-        <TextInput
-          placeholder="Title"
-          onChangeText={title => this.setState({ title })}
-          value={this.state.title}
-        />
-        <TouchableOpacity onPress={this.showDateTimePicker}>
-          {this.state.isChosen ? <Text>{moment(this.state.date).format('MMMM Do YYYY, h:mm:ss a').toString()}</Text> : <Text>Choose Date</Text>}
-        </TouchableOpacity>
-        <DateTimePicker
-          mode={'datetime'}
-          isVisible={this.state.isDateTimePickerVisible}
-          onConfirm={this.handleDatePicked}
-          onCancel={this.hideDateTimePicker}
-        />
-        <TextInput
-          placeholder="Location"
-          onChangeText={location => this.setState({ location })}
-          value={this.state.location}
-        />
-        <TextInput
-          placeholder="Description"
-          onChangeText={description => this.setState({ description })}
-          value={this.state.description}
-        />
-        <TouchableOpacity onPress={this.pickImageHandler}>
-          <Text>Select Image</Text>
-        </TouchableOpacity>
-        <Image
-          source={{ uri: this.state.imageUrl }}
-          style={{ width: 300, height: 300 }}
-        />
-        <Button title="Save Memory" onPress={this.submitForm} />
+      <View
+        style={{
+          width: '90%',
+          padding: 0
+        }}>
+        <Card containerStyle={{
+          margin: 0,
+          padding: 10,
+          width: '100%',
+        }}>
+          <Input
+            placeholder="Title"
+            label='Title'
+            onChangeText={title => this.setState({ title })}
+            value={this.state.title}
+          />
+          <Button
+            buttonStyle={{ margin: 3 }}
+            onPress={this.showDateTimePicker}
+            title={this.state.isChosen ? <Text>{moment(this.state.date).format('MMMM Do YYYY, h:mm:ss a').toString()}</Text> : <Text>Choose Date</Text>}
+          />
+          <DateTimePicker
+            mode={'datetime'}
+            isVisible={this.state.isDateTimePickerVisible}
+            onConfirm={this.handleDatePicked}
+            onCancel={this.hideDateTimePicker}
+          />
+          <Input
+            placeholder="Location"
+            label='Location'
+            onChangeText={location => this.setState({ location })}
+            value={this.state.location}
+          />
+          <Input
+            placeholder="Description"
+            label='Description'
+            onChangeText={description => this.setState({ description })}
+            value={this.state.description}
+          />
+          <Button
+            buttonStyle={{ margin: 3 }}
+            onPress={this.pickImageHandler}
+            title='Select Image'
+          />
+          <Image
+            source={{ uri: this.state.imageUrl }}
+            style={{ width: '100%', height: 230 }}
+          />
+          <Button
+            buttonStyle={{ margin: 3 }}
+            title="Save Memory"
+            onPress={this.submitForm}
+          />
+        </Card>
       </View>
     );
   }

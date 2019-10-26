@@ -27,7 +27,8 @@
     "lint:fix": "eslint . --fix",
     "prettier": "prettier --write '*.js'",
     "format-code": "yarn run prettier && yarn run lint:fix",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "react-devtools": "react-devtools"
   },
   "lint-staged": {
     "src/**/*.{js,jsx}": [
@@ -54,6 +55,7 @@
     "moment": "^2.24.0",
     "prop-types": "^15.6.1",
     "react": "^16.9.0",
+    "react-devtools": "^3.6.3",
     "react-native": "^0.61.2",
     "react-native-elements": "^1.2.6",
     "react-native-firebase": "^5.5.6",
