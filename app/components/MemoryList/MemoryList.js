@@ -10,7 +10,10 @@ import { getVisibleMemories } from '../../selectors';
 import { Memory } from '../Memory';
 
 const MemoryList = (props) => (
-  <View style={styles.container}>
+  <View style={{
+    width: '80%',
+    justifyContent: 'space-around'
+  }}>
     <FlatList
       data={props.memories && props.memories.filter((memory) => {
         const timelineIDMatch = memory.timelineID === props.timelineID;

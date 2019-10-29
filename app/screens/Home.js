@@ -15,7 +15,10 @@ const Home = (props) => {
   };
   return (
     <Container>
-      <View>
+      <View style={{
+        width: '80%',
+        justifyContent: 'space-around'
+      }}>
         <Button
           title="Add Timeline"
           buttonStyle={{ margin: 20 }}

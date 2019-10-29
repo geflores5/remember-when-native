@@ -7,10 +7,10 @@ import { firestoreConnect } from 'react-redux-firebase';
 
 import { getVisibleTimelines } from '../../selectors';
 import { Timeline } from '../Timeline';
-import styles from './styles';
+
 
 const TimelineList = (props) => (
-  <View style={styles.container}>
+  <View>
     <FlatList
       data={props.timelines}
       keyExtractor={item => item.id}
