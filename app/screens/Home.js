@@ -1,30 +1,62 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { TouchableOpacity, Text, View } from 'react-native';
+import { NavigationEvents } from 'react-navigation';
+import { connect } from 'react-redux';
+import { View } from 'react-native';
+import { Button } from "react-native-elements";
 
+import { signOut } from '../actions/auth';
 import { Container } from '../components/Container';
 import { TimelineList } from '../components/TimelineList';
 
-class Home extends Component {
-  static propTypes = {
-    navigation: PropTypes.object,
+const Home = (props) => {
+  const handleAddTimeline = () => {
+    props.nav('AddTimelinePage');
   };
-  handleAddTimeline = () => {
-    this.props.navigation.navigate('AddTimelinePage');
+  const handleSignOut = () => {
+    props.signOut();
+    props.nav('SignIn');
   };
-
-  render() {
-    return (
-      <Container>
-        <View>
-          <TouchableOpacity onPress={this.handleAddTimeline}>
-            <Text>Add Timeline</Text>
-          </TouchableOpacity>
-          <TimelineList />
+  return (
+    <Container>
+      <NavigationEvents
+        onDidFocus={() => {
+          if (!props.auth.uid) {
+            props.nav('SignIn')
+          }
+        }}
+      />
+      <View style={{
+        width: '80%',
+        justifyContent: 'space-around'
+      }}>
+        <View style={{ flexDirection: 'row', justifyContent: 'space-around' }}>
+          <Button
+            title='Add Timeline'
+            buttonStyle={{ margin: 20 }}
+            onPress={handleAddTimeline}
+          />
+          <Button
+            title='Log Out'
+            buttonStyle={{ margin: 20 }}
+            onPress={handleSignOut}
+          />
         </View>
-      </Container>
-    );
+        <TimelineList />
+      </View>
+    </Container>
+  );
+}
+
+const mapStateToProps = (state, ownProps) => {
+  return {
+    auth: state.firebase.auth,
+    nav: ownProps.navigation.navigate
+  }
+}
+const mapDispatchToProps = (dispatch) => {
+  return {
+    signOut: () => dispatch(signOut())
   }
 }
 
-export default Home;
+export default connect(mapStateToProps, mapDispatchToProps)(Home);

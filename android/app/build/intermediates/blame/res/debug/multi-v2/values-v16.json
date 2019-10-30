@@ -4,7 +4,7 @@
             "outputFile": "/Users/geflores/Code/remember-when-native/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/Users/geflores/.gradle/caches/transforms-2/files-2.1/02986bdc22444181d139cea7132ca12d/appcompat-1.1.0-rc01/res/values-v16/values-v16.xml",
+                    "source": "/Users/geflores/.gradle/caches/transforms-2/files-2.1/f69e18bb4d6f4dd3491b4176f4f0a64d/appcompat-1.1.0-rc01/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/geflores/.gradle/caches/transforms-2/files-2.1/ecdcbbf5b476edd5b7f32adcc180fe3e/core-1.1.0-rc01/res/values-v16/values-v16.xml",
+                    "source": "/Users/geflores/.gradle/caches/transforms-2/files-2.1/08a5e8398acd19c74ddd3081e99f0d61/core-1.1.0-rc01/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -1,18 +1,18 @@
-import { createStore } from 'redux';
-import AsyncStorage from '@react-native-community/async-storage';
-import { persistStore, persistReducer } from 'redux-persist';
+import { applyMiddleware, createStore, compose } from 'redux';
+import thunk from 'redux-thunk';
+import { reduxFirestore, getFirestore } from 'redux-firestore';
+import { getFirebase } from 'react-redux-firebase';
 
-import reducer from '../reducers';
-
-const persistConfig = {
-  key: 'root',
-  storage: AsyncStorage
-};
-
-const persistedReducer = persistReducer(persistConfig, reducer);
+import rootReducer from '../reducers';
+import firebase from './configureFirebase';
 
 export default () => {
-  const store = createStore(persistedReducer);
-  const persistor = persistStore(store);
-  return { store, persistor };
-};
+  const store = createStore(rootReducer,
+    compose(
+      applyMiddleware(thunk.withExtraArgument({ getFirebase, getFirestore })),
+      reduxFirestore(firebase)
+    )
+  );
+
+  return store;
+}

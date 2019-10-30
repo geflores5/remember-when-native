@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1028683041485",
+    "firebase_url": "https://remember-when-5gyebb.firebaseio.com",
+    "project_id": "remember-when-5gyebb",
+    "storage_bucket": "remember-when-5gyebb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1028683041485:android:af6462740bb05360",
+        "android_client_info": {
+          "package_name": "com.rememberwhen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1028683041485-2vsetttoee1on3d518og7ediso6ssf09.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rememberwhen",
+            "certificate_hash": "ec160185c6446a3dbfa86a746b4de2e508462186"
+          }
+        },
+        {
+          "client_id": "1028683041485-9l3ukbdravd16dile0lcvep2tc9c54um.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxRhDyVK875lukT2boBJLDg4PLjjXTD_g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1028683041485-9l3ukbdravd16dile0lcvep2tc9c54um.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

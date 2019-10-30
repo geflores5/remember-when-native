@@ -1,16 +1,21 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { compose } from 'redux';
 import { FlatList, View } from 'react-native';
 import { withNavigation } from 'react-navigation';
+import { firestoreConnect } from 'react-redux-firebase';
 
 import styles from './styles';
 import { getVisibleMemories } from '../../selectors';
 import { Memory } from '../Memory';
 
-const MemoryList = props => (
-  <View style={styles.container}>
+const MemoryList = (props) => (
+  <View style={{
+    width: '80%',
+    justifyContent: 'space-around'
+  }}>
     <FlatList
-      data={props.memories.filter((memory) => {
+      data={props.memories && props.memories.filter((memory) => {
         const timelineIDMatch = memory.timelineID === props.timelineID;
         return timelineIDMatch;
       })}
@@ -32,7 +37,12 @@ const MemoryList = props => (
 );
 
 const mapStateToProps = state => ({
-  memories: getVisibleMemories(state.memories, state.memoryFilters),
+  memories: state.firestore.ordered.memories && getVisibleMemories(state.firestore.ordered.memories, state.memoryFilters),
 });
 
-export default withNavigation(connect(mapStateToProps)(MemoryList));
+export default withNavigation(compose(
+  connect(mapStateToProps),
+  firestoreConnect([
+    { collection: 'memories' }
+  ])
+)(MemoryList));

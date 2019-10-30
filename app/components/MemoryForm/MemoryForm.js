@@ -1,19 +1,23 @@
 import React, { Component } from 'react';
-import { Button, Image, TextInput, Text, TouchableOpacity, View } from 'react-native';
+import { connect } from 'react-redux';
+import { Image, Text, View } from 'react-native';
 import DateTimePicker from 'react-native-modal-datetime-picker';
 import ImagePicker from 'react-native-image-picker';
 import moment from 'moment';
+import { Card, Button, Input } from "react-native-elements";
 
 class MemoryForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      timelineID: this.props.memory ? this.props.memory.timelineID : this.props.timelineID,
-      title: this.props.memory ? this.props.memory.title : '',
-      date: this.props.memory ? moment(this.props.memory.date) : moment(),
-      location: this.props.memory ? this.props.memory.location : '',
-      description: this.props.memory ? this.props.memory.description : '',
-      media: this.props.memory ? this.props.memory.media : [],
+      userID: this.props.timeline ? this.props.timeline.userID : this.props.auth.uid,
+      timelineID: props.memory ? props.memory.timelineID : props.timelineID,
+      title: props.memory ? props.memory.title : '',
+      date: props.memory ? moment(props.memory.date) : moment(),
+      location: props.memory ? props.memory.location : '',
+      description: props.memory ? props.memory.description : '',
+      media: props.memory ? props.memory.media : {},
+      imageUrl: props.memory ? props.memory.imageUrl : '',
 
       isDateTimePickerVisible: false,
       isChosen: false,
@@ -21,12 +25,13 @@ class MemoryForm extends Component {
   }
   submitForm = () => {
     this.props.submitMemory({
+      userID: this.state.userID,
       timelineID: this.state.timelineID,
       title: this.state.title,
       date: this.state.date.valueOf(),
       location: this.state.location,
       description: this.state.description,
-      media: this.state.media,
+      imageUrl: this.state.imageUrl,
     });
     this.props.goHome();
   };
@@ -37,56 +42,84 @@ class MemoryForm extends Component {
     this.setState({ isChosen: true });
     this.hideDateTimePicker();
   };
+
   pickImageHandler = () => {
     const options = {
-      title: 'Select Image',
-      noData: true
+      title: 'Select Image'
     }
     ImagePicker.showImagePicker(options, (response) => {
       console.log('Response = ', response);
       if (response.uri) {
         this.setState({ media: response });
       }
+      console.log(this.state);
     });
   };
   render() {
     return (
-      <View>
-        <TextInput
-          placeholder="Title"
-          onChangeText={title => this.setState({ title })}
-          value={this.state.title}
-        />
-        <TouchableOpacity onPress={this.showDateTimePicker}>
-          {this.state.isChosen ? <Text>{moment(this.state.date).format('MMMM Do YYYY, h:mm:ss a').toString()}</Text> : <Text>Choose Date</Text>}
-        </TouchableOpacity>
-        <DateTimePicker
-          mode={'datetime'}
-          isVisible={this.state.isDateTimePickerVisible}
-          onConfirm={this.handleDatePicked}
-          onCancel={this.hideDateTimePicker}
-        />
-        <TextInput
-          placeholder="Location"
-          onChangeText={location => this.setState({ location })}
-          value={this.state.location}
-        />
-        <TextInput
-          placeholder="Description"
-          onChangeText={description => this.setState({ description })}
-          value={this.state.description}
-        />
-        <TouchableOpacity onPress={this.pickImageHandler}>
-          <Text>Select Image</Text>
-        </TouchableOpacity>
-        <Image
-          source={{ uri: this.state.media }}
-          style={{ width: 300, height: 300 }}
-        />
-        <Button title="Save Memory" onPress={this.submitForm} />
+      <View
+        style={{
+          width: '90%',
+          padding: 0
+        }}>
+        <Card containerStyle={{
+          margin: 0,
+          padding: 10,
+          width: '100%',
+        }}>
+          <Input
+            placeholder="Title"
+            label='Title'
+            onChangeText={title => this.setState({ title })}
+            value={this.state.title}
+          />
+          <Button
+            buttonStyle={{ margin: 3 }}
+            onPress={this.showDateTimePicker}
+            title={this.state.isChosen ? <Text>{moment(this.state.date).format('MMMM Do YYYY, h:mm:ss a').toString()}</Text> : <Text>Choose Date</Text>}
+          />
+          <DateTimePicker
+            mode={'datetime'}
+            isVisible={this.state.isDateTimePickerVisible}
+            onConfirm={this.handleDatePicked}
+            onCancel={this.hideDateTimePicker}
+          />
+          <Input
+            placeholder="Location"
+            label='Location'
+            onChangeText={location => this.setState({ location })}
+            value={this.state.location}
+          />
+          <Input
+            placeholder="Description"
+            label='Description'
+            onChangeText={description => this.setState({ description })}
+            value={this.state.description}
+          />
+          <Button
+            buttonStyle={{ margin: 3 }}
+            onPress={this.pickImageHandler}
+            title='Select Image'
+          />
+          <Image
+            source={{ uri: this.state.imageUrl }}
+            style={{ width: '100%', height: 230 }}
+          />
+          <Button
+            buttonStyle={{ margin: 3 }}
+            title="Save Memory"
+            onPress={this.submitForm}
+          />
+        </Card>
       </View>
     );
   }
 }
 
-export default MemoryForm;
+const mapStateToProps = (state) => {
+  return {
+    auth: state.firebase.auth
+  }
+}
+
+export default connect(mapStateToProps)(MemoryForm);
