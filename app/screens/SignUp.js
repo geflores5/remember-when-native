@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Card, Button, Input, Text } from "react-native-elements";
-import { View } from 'react-native';
+import { TouchableOpacity, View } from 'react-native';
 import { signUp } from '../actions/auth';
 import { Container } from '../components/Container';
 
@@ -21,18 +21,14 @@ class SignUp extends Component {
     this.props.signUp(this.state);
     this.props.navigation.navigate('Home');
   };
+  goHome = () => {
+    this.props.navigation.navigate('Home')
+  }
   render() {
     return (
       <Container>
-        <View style={{
-          paddingVertical: 20,
-        }}>
-          <Text
-            h1
-            h1Style={{ textAlign: "center", marginBottom: 20 }}
-          >
-            Remember When</Text>
-          <Card>
+        <View style={{ paddingVertical: 20, width: '90%' }}>
+          <Card title='Sign Up'>
             <Input
               placeholder="Email address..."
               onChangeText={email => this.setState({ email })}

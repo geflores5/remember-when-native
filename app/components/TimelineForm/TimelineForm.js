@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import { View } from 'react-native';
 import { Card, Button, Input } from "react-native-elements";
 
@@ -8,16 +9,19 @@ class TimelineForm extends Component {
     this.state = {
       title: this.props.timeline ? this.props.timeline.title : '',
       description: this.props.timeline ? this.props.timeline.description : '',
+      userID: this.props.timeline ? this.props.timeline.userID : this.props.auth.uid
     };
   }
   submitForm = () => {
     this.props.submitTimeline({
       title: this.state.title,
       description: this.state.description,
+      userID: this.state.userID
     });
     this.props.goHome();
   };
   render() {
+    console.log(this.props.auth)
     return (
       <View
         style={{
@@ -55,4 +59,10 @@ class TimelineForm extends Component {
   }
 }
 
-export default TimelineForm;
+const mapStateToProps = (state) => {
+  return {
+    auth: state.firebase.auth
+  }
+}
+
+export default connect(mapStateToProps)(TimelineForm);

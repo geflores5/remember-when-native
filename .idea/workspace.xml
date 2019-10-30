@@ -5,7 +5,15 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a603ab1d-8ecb-44b2-b0b8-edee00b587b9" name="Default Changelist" comment="" />
+    <list default="true" id="a603ab1d-8ecb-44b2-b0b8-edee00b587b9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app/components/MemoryForm/MemoryForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/MemoryForm/MemoryForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/TimelineForm/TimelineForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/TimelineForm/TimelineForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/TimelineList/TimelineList.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/TimelineList/TimelineList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/SignIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/SignIn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/SignUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/SignUp.js" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,10 +29,16 @@
   <component name="FileEditorManager">
     <leaf />
   </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="KEY_STORE_PATH" value="$USER_HOME$/Desktop/remember-when" />
+    <option name="KEY_ALIAS" value="key0" />
+    <option name="BUILD_TARGET_KEY" value="apk" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="365" />
     <option name="y" value="23" />
     <option name="width" value="840" />
     <option name="height" value="877" />
@@ -108,6 +122,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="AndroidProguardConfigPaths" value="$USER_HOME$/Library/Android/sdk/tools/proguard/proguard-android.txt" />
+    <property name="AndroidRunProguardForReleaseBuild" value="true" />
+    <property name="ExportedApkPath" value="$PROJECT_DIR$/remember-when-native.apk" />
+    <property name="ExportedModule" value="remember-when-native" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>

@@ -12,8 +12,8 @@ import EditMemory from '../screens/EditMemory';
 import EditTimeline from '../screens/EditTimeline';
 
 const Navigator = createStackNavigator({
-  SignUp: { screen: SignUp },
   Home: { screen: Home },
+  SignUp: { screen: SignUp },
   SignIn: { screen: SignIn },
   ViewTimeline: { screen: ViewTimeline },
   ViewMemory: { screen: ViewMemory },

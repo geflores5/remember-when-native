@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Image, ProgressBarAndroid, TextInput, Text, TouchableOpacity, View } from 'react-native';
+import { connect } from 'react-redux';
+import { Image, Text, View } from 'react-native';
 import DateTimePicker from 'react-native-modal-datetime-picker';
 import ImagePicker from 'react-native-image-picker';
 import moment from 'moment';
@@ -9,6 +10,7 @@ class MemoryForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      userID: this.props.timeline ? this.props.timeline.userID : this.props.auth.uid,
       timelineID: props.memory ? props.memory.timelineID : props.timelineID,
       title: props.memory ? props.memory.title : '',
       date: props.memory ? moment(props.memory.date) : moment(),
@@ -23,6 +25,7 @@ class MemoryForm extends Component {
   }
   submitForm = () => {
     this.props.submitMemory({
+      userID: this.state.userID,
       timelineID: this.state.timelineID,
       title: this.state.title,
       date: this.state.date.valueOf(),
@@ -113,4 +116,10 @@ class MemoryForm extends Component {
   }
 }
 
-export default MemoryForm;
+const mapStateToProps = (state) => {
+  return {
+    auth: state.firebase.auth
+  }
+}
+
+export default connect(mapStateToProps)(MemoryForm);

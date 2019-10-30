@@ -9,26 +9,37 @@ import { getVisibleTimelines } from '../../selectors';
 import { Timeline } from '../Timeline';
 
 
-const TimelineList = (props) => (
-  <View>
-    <FlatList
-      data={props.timelines}
-      keyExtractor={item => item.id}
-      renderItem={({ item }) => (
-        <Timeline
-          title={item.title}
-          description={item.description}
-          onPress={() => {
-            props.navigation.navigate('ViewTimeline', { item });
-          }}
-        />
-      )}
-    />
-  </View>
-);
+const TimelineList = (props) => {
+  const userTimelines = [];
+  {
+    props.timelines && props.timelines.map(timeline => {
+      if (props.auth.uid === timeline.userID) {
+        userTimelines.push(timeline)
+      }
+    })
+  }
+  return (
+    <View>
+      <FlatList
+        data={userTimelines}
+        keyExtractor={item => item.id}
+        renderItem={({ item }) => (
+          <Timeline
+            title={item.title}
+            description={item.description}
+            onPress={() => {
+              props.navigation.navigate('ViewTimeline', { item });
+            }}
+          />
+        )}
+      />
+    </View>
+  );
+}
 
 const mapStateToProps = state => ({
   timelines: getVisibleTimelines(state.firestore.ordered.timelines, state.timelineFilters),
+  auth: state.firebase.auth
 });
 
 export default withNavigation((compose(

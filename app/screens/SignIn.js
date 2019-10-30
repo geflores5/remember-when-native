@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { Card, Button, Input } from "react-native-elements";
+import { Card, Button, Input, Text } from "react-native-elements";
 import { View } from 'react-native';
 import { signIn } from '../actions/auth';
 import { Container } from '../components/Container';
@@ -24,8 +24,8 @@ class SignIn extends Component {
     render() {
         return (
             <Container>
-                <View style={{ paddingVertical: 20, width: 375 }}>
-                    <Card>
+                <View style={{ paddingVertical: 20, width: '90%' }}>
+                    <Card title='Sign In'>
                         <Input
                             placeholder="Email address..."
                             onChangeText={email => this.setState({ email })}
@@ -42,6 +42,13 @@ class SignIn extends Component {
                             textStyle={{ color: "#bcbec1" }}
                             title="Sign In"
                             onPress={this.submitForm}
+                        />
+                        <Button
+                            buttonStyle={{ marginTop: 20 }}
+                            backgroundColor="transparent"
+                            textStyle={{ color: "#bcbec1" }}
+                            title="Sign Up"
+                            onPress={() => this.props.navigation.navigate("SignUp")}
                         />
                     </Card>
                 </View>
